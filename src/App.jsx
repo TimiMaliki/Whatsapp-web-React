@@ -3,7 +3,7 @@ import { FaUserCircle } from 'react-icons/fa'
 import { FaUserFriends } from 'react-icons/fa'
 import { FaStackExchange } from 'react-icons/fa'
 import { FaFacebookMessenger } from 'react-icons/fa'
-import { FaArrowCircleRight} from 'react-icons/fa'
+import { FaArrowCircleRight } from 'react-icons/fa'
 
 function App() {
 
@@ -11,9 +11,9 @@ function App() {
   return (
     <div className='container mx-auto'>
 
-      <div className="container grid grid-cols-2  w-full  h-screen">
+      <div className="container grid grid-cols-2  w-full  h-full">
 
-        <div className="friends  bg-white">
+        <div className="friends  container bg-slate-500">
           {/* profile icons */}
           <div className="profile bg-slate-100 h-30 flex justify-between items-center py-8 px-8">
             <FaUserCircle className='text-4xl justify-start cursor-pointer text-blue-200'></FaUserCircle>
@@ -137,14 +137,12 @@ function App() {
             <p className='mt-4 text-md text-slate-300'>Yesterday</p>
 
           </div>
-
-
-
-
         </div>
 
 
-        <div className="chatBox bg-slate-200 w-full h-full">
+
+
+        <div className="chatBox w-full h-full bg-slate-400 ">
 
 
           <div className="profile bg-slate-100 h-30 flex gap-4  items-center py-8 px-8">
@@ -152,16 +150,18 @@ function App() {
             {/* person who you are chatting with */}
             <h2 className=''>Precious</h2>
           </div>
+
+          {/* textbox */}
+          <div className='bg-slate-100 flex  translate-y-28 justify-between mt-96'>
+            <input type="text" placeholder='Type a Message ' className='bg-slate-700 text-white rounded w-full  h-16 text-align' />
+            <FaArrowCircleRight className='text-3xl  cursor-pointer  text-slate-400  mt-4'></FaArrowCircleRight></div>
         </div>
 
-{/* textbox */}
-<div className='bg-white text-center '> 
- <input type="text"   placeholder='Type a Message ' className='bg-slate-700 text-white rounded w-full translate-x-full h-16 text-align' /> 
- <FaArrowCircleRight className='text-3xl  cursor-pointer text-slate-200 translate-x-full -mt-12'></FaArrowCircleRight></div>
-       
+
 
       </div>
- 
+
+
 
 
     </div>
