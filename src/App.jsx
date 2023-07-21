@@ -152,8 +152,8 @@ function App() {
           </div>
 
           {/* textbox */}
-          <div className='bg-slate-100 flex  translate-y-28 justify-between mt-96'>
-            <input type="text" placeholder='Type a Message ' className='bg-slate-700 text-white rounded w-full  h-16 text-align' />
+          <div className='bg-slate-100 flex  translate-y-32 justify-between mt-96'>
+            <input type="text" placeholder='Type a Message ' className='bg-slate-700 text-white rounded w-full  h-12 text-align' />
             <FaArrowCircleRight className='text-3xl  cursor-pointer  text-slate-400  mt-4'></FaArrowCircleRight></div>
         </div>
 
