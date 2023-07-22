@@ -19,7 +19,7 @@ const App = () => {
 
         <div className="chatBox w-full h-full bg-white ">
           <div className="profile bg-slate-100 h-10 flex  justify-between items-center py-8 px-8">
-            <FaUserCircle className='text-6xl justify-start cursor-pointer text-blue-200'></FaUserCircle>
+            <FaUserCircle className='text-6xl justify-start cursor-pointer text-slate-200'></FaUserCircle>
             <div className='flex gap-6'>
             <FaSearch className='text-2xl text-slate-500'></FaSearch>
             <FaBars className='text-2xl text-slate-500'></FaBars>
