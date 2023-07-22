@@ -1,18 +1,21 @@
 import React from 'react'
 import { FaUserCircle} from 'react-icons/fa'
 
-const Friends = () => {
+const Friends = (props) => {
   return (
     <div>
         {/* chats */}
-        <div className="chats flex justify-between">
+        <div className="chats flex justify-between gap-2">
             {/* userOne */}
             <div className="flex gap-4">
-              <FaUserCircle className='text-6xl mt-4 justify-start cursor-pointer text-slate-100'></FaUserCircle>
+                <div className='image'>
+                <img src={props.image} alt="" className='rounded-full mb-2.5 w-12 h-12' />
+                </div>
+            
 
               <div className="text grid cursor-pointer ">
                 <h2 className='mt-4'></h2>
-                <p>Una last dance</p>
+                <p className='-my-5'>{props.username}</p>
               </div>
 
             </div>

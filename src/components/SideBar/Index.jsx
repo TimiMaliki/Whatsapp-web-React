@@ -33,10 +33,17 @@ const SideBar = () => {
 
     },
 ]
+
+
   return (
     <div>
 <SideBarHeader/>
-<Friends />
+{friends.map((item,index) => {
+
+return <Friends username={item.userName} 
+image={item.image}/>
+})}
+
     </div>
   )
 }

@@ -28,8 +28,8 @@ const SideBarHeader = () => {
 
         {/* searchBar */}
         <div className="searchBar bg-white w-full  flex justify-center items-center relative h-12">
-          <FaSearch className='text-lg cursor-pointer translate-x-9 mt-2 text-slate-500'></FaSearch>
-          <input type="text" placeholder='search or start new chat' className='bg-slate-200 mt-2 rounded w-2/3 h-11  ' />
+          <FaSearch className='text-lg cursor-pointer lg:translate-x-9 lg:mt-2 text-slate-500'></FaSearch>
+          <input type="text" placeholder='search or start new chat' className='bg-slate-200 mt-2 rounded md:w-full lg:w-2/3 h-11  ' />
         </div>
         {/* border-line */}
         <div className='border-line border-2 border-black mt-2 w-full'>
