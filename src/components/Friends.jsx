@@ -2,6 +2,10 @@ import React from 'react'
 import { FaUserCircle} from 'react-icons/fa'
 
 const Friends = (props) => {
+    const user = () => {
+
+    }
+    
   return (
     <div>
         {/* chats */}
@@ -14,8 +18,9 @@ const Friends = (props) => {
             
 
               <div className="text grid cursor-pointer ">
-                <h2 className='mt-4'></h2>
-                <p className='-my-5'>{props.username}</p>
+                <p className='my-5' >{props.username}</p>
+                <p className=''>{props.message}</p>
+
               </div>
 
             </div>
