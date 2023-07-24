@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import SideBarHeader from "./SideBarHeader";
 import Friends from "../Friends";
 
 
 const SideBar = (props) => {
-
 
   const friends = [
     {
@@ -42,23 +41,20 @@ const SideBar = (props) => {
     },
   ];
 
+  // const searchUser = friends.filter( (i) => i.userName === 'Uzo Samuel')
+    
   return (
     <div>
       <SideBarHeader />
       {friends.map((item, index) => {
         return <div onClick={() => {
             props.getUser(item);
-          
           }}>
-            
           <Friends
             username={item.userName}
-            
             image={item.image}
             message={item.text}
-            
           />
-          {props.tx}
         </div>;
       })}
     </div>
